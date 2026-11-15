@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h1>Student Registration Form </h1>
+
+    <form action="#" method="get">
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname"
+            name="fullname" required
+            minlength="2" maxlength="80"
+            placeholder="Emter your full name">
+        <br><br>
+
+        <label for="studentid">Student ID:</label><br>
+        <input type="text" id="studentid"
+            name="studentid" required>
+        <br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email"
+            name="email" required>
+        <br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password"
+            name="password" minlength="8" required>
+        <br><br>
+
+        <label for="birthday">Birthday:</label><br>
+        <input type="date" id="birthday"
+            name="birthday" required>
+        <br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male">
+        
+
+        <input type="radio" name="gender" value="Female"
+        <br><br>
+
+        <label for="program">Program</label><br>
+
+        <select id="ptogram" name="program">
+            <option value="">Select Program</option>
+            <option value="BSIT">BS Information Technology</option>
+            <option value="BSCS">BS Computer Science</option>
+            <option value="BSIS">BS Information Systems</option>
+        </select>
+
+        <br><br>
+
+        <label>Hobbies:</label><br>
+
+        <input type="checkbox" name="hobby" value="Programming">
+        <input type="checkbox" name="hobby" value="Photography">
+        <input type="checkbox" name="hobby" value="Gaming">
+        <br><br>
+
+        <label for="address">Address</label><br>
+        <textarea id="address" name="address"
+            rows="4" cols="40"></textarea>
+        <br><br>
+
+        <label for="comments">Comment:</label><br>
+        <textarea id="comments" name="comments"
+            rows="4" cols="40"></textarea>
+        <br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+</body>
+</html>
